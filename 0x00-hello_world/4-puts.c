@@ -5,7 +5,6 @@
 *Return: Always 0
 *This script prints the string without the use of printf
 */
-
 int main(void)
 {
 
