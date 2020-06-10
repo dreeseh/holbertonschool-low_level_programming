@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
-*main - Entry point
-*Return: Always 0
-*This script prints the string without the use of printf
+* main - Entry point
+* Return: Always 0
 */
 int main(void)
 {
