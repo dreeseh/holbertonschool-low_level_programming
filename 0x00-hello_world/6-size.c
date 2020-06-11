@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 /**
  * main - Entry point
  *
@@ -14,7 +13,6 @@ int intType;
 long longIntType;
 long long longLongIntType;
 float floatType;
-
 printf("Size of a char: %ld bytes\n", sizeof(charType));
 printf("Size of an int: %ld bytes\n", sizeof(intType));
 printf("Size of a long int: %ld bytes\n", sizeof(longIntType));
