@@ -1,11 +1,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /**
+ * main - main function is void.
  * BETTY_DOC = "betty-doc"
- *
- * function main - time determined variable number output.
  * main - function that is void.
  * main function - function that is void.
  * Return: Always 0
