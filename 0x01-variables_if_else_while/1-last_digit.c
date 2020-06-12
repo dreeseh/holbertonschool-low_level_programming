@@ -19,7 +19,7 @@ n = rand() - RAND_MAX / 2;
 o = (n % 10);
 if (n == 0)
 {
-printf("Last digit of %d is %d 10 and is 0\n", n, o);
+printf("Last digit of %d is %d and is 0\n", n, o);
 }
 if (n < 6 && n != 0)
 {
