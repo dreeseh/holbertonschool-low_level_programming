@@ -5,9 +5,12 @@
  */
 int main(void)
 {
-char n;
-for (n = 1 ; n <= 9 ; n++)
+int n = 0;
+while (n < 10)
+{
 printf("%d", n);
+n++;
+}
 printf("\n");
 return (0);
 }
