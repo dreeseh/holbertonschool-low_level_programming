@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - uses function getchar to print the alphabet
- * Return: always zero
+ * main - is void
+ * Return: is zero
  */
 int main(void)
 {
-int n;
+char n;
 for (n = 1 ; n <= 9 ; n++)
 printf("%d", n);
 printf("\n");
