@@ -1,12 +1,15 @@
 #include <stdio.h>
 /**
  * main - void
+ *
  * Return: zero
+ *
  */
 int main(void)
 {
 int n;
 int d;
+
 n = 0;
 while (n <= 99)
 {
