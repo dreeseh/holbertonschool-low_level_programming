@@ -1,6 +1,5 @@
 #include "holberton.h"
-/** 
- *
+/**
  * main - is always void
  *
  * Return: is alway zero
