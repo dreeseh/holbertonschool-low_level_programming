@@ -9,9 +9,7 @@ void print_alphabet(void)
 char ch;
 for (ch = 'a' ; ch <= 'z' ; ch++)
 {
-if (ch != 'e' && ch != 'q')
 _putchar(ch);
 }
 _putchar('\n');
-return;
 }
