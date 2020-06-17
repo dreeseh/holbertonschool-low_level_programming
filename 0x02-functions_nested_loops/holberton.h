@@ -14,3 +14,6 @@ int _islower(int c);
 
 /* prints every hour of every day */
 void jack_bauer(void);
+
+/* prints the last digit */
+int print_last_digit(int);
