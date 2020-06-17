@@ -17,3 +17,6 @@ void jack_bauer(void);
 
 /* prints the last digit */
 int print_last_digit(int);
+
+/* prints the alphabet 2x */
+int _isalpha(int c);
