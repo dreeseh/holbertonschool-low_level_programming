@@ -20,3 +20,6 @@ int print_last_digit(int);
 
 /* prints the alphabet 2x */
 int _isalpha(int c);
+
+/* prints the sign of a number */
+int print_sign(int n);
