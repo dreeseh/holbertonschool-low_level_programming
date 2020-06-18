@@ -26,9 +26,3 @@ int print_sign(int n);
 
 /* prints the absolute value of a number */
 int _abs(int);
-
-/* determines if the function is uppercase or not */
-int _isupper(int c);
-
-/* checks for a digit 0 - 9 */
-int _isdigit(int c);
