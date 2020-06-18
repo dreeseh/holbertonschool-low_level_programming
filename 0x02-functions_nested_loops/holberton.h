@@ -23,3 +23,6 @@ int _isalpha(int c);
 
 /* prints the sign of a number */
 int print_sign(int n);
+
+/* prints the absolute value of a number */
+int _abs(int);
