@@ -38,3 +38,6 @@ int mul(int a, int b);
 
 /* prints numbers 0-9 */
 void print_numbers(void);
+
+/* prints 0-9 except for 2 & 4  */
+void print_most_numbers(void);
