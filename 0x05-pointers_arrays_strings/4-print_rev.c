@@ -6,18 +6,17 @@
  */
 void print_rev(char *s)
 {
-	int ticker = 0;
+	int length = 0;
+	int loop = 0;
 
-	while (s[ticker] != '\0')
+	while (s[length] != '\0')
 	{
-		ticker++;
+		length++;
 	}
 
-	while (ticker >= '\0')
+	for (loop = --length; loop >= 0 ; loop--)
 	{
-		_putchar(s[ticker]);
-		ticker--;
+		_putchar(s[loop]);
 	}
-
-_putchar('\n');
+	_putchar('\n');
 }
