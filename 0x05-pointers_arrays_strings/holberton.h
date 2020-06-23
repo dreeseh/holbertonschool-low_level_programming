@@ -56,3 +56,20 @@ void swap_int(int *a, int *b);
 
 /* returns the length of a string */
 int _strlen(char *s);
+
+/* a function that prints a string   */
+void _puts(char *str);
+
+/* prints a string in reverse  */
+void print_rev(char *s);
+
+/* a function that reverses a string  */
+void rev_string(char *s);
+
+
+/*   */
+/*   */
+/*   */
+/*   */
+/*   */
+/*   */
