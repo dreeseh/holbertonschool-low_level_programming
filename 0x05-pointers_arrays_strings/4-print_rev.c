@@ -13,7 +13,7 @@ void print_rev(char *s)
 		ticker++;
 	}
 
-	while (ticker >= 0)
+	while (ticker >= '\0')
 	{
 		_putchar(s[ticker]);
 		ticker--;
