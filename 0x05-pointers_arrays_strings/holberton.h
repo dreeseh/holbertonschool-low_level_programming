@@ -66,10 +66,4 @@ void print_rev(char *s);
 /* a function that reverses a string  */
 void rev_string(char *s);
 
-
-/*   */
-/*   */
-/*   */
-/*   */
-/*   */
 /*   */
