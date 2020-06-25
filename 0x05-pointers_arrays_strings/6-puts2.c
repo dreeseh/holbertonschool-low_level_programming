@@ -1,5 +1,9 @@
 #include "holberton.h"
-
+/**
+ * puts2 - prints every other line
+ * @str: string
+ * Return: zero
+ */
 void puts2(char *str)
 {
 	int kit = 0;
