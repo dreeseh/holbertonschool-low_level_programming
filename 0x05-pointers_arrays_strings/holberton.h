@@ -68,3 +68,6 @@ void rev_string(char *s);
 
 /* prints every other character of a string  */
 void puts2(char *str);
+
+/* prints the 2nd half of a string */
+void puts_half(char *str);
