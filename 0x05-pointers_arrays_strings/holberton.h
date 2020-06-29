@@ -71,3 +71,6 @@ void puts2(char *str);
 
 /* prints the 2nd half of a string */
 void puts_half(char *str);
+
+/* copies a string */
+char *_strcpy(char *dest, char *src);
