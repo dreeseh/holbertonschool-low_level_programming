@@ -1,0 +1,1 @@
+Index of 0x07 Pointers Arrays and Strings
