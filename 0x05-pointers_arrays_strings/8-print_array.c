@@ -16,10 +16,6 @@ void print_array(int *a, int n)
 		{
 			printf(", ");
 		}
-		if (!(loop % 10) && loop)
-		{
-			printf("\n");
-		}
 		printf("%d", a[loop]);
 		loop++;
 	}
