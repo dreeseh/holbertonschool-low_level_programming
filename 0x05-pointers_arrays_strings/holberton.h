@@ -74,3 +74,6 @@ void puts_half(char *str);
 
 /* copies a string */
 char *_strcpy(char *dest, char *src);
+
+/* prints n elements of an array of integers */
+void print_array(int *a, int n);
