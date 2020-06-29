@@ -8,14 +8,20 @@
  */
 void print_array(int *a, int n)
 {
-	int loop;
+	int loop = 0;
 
-	for (loop = 0 ; loop < n - 1 ; loop++)
+	while (loop < n)
 	{
-		printf("%d, ", a[loop]);
+		if (loop % 10)
+		{
+			printf(", ");
+		}
+		if (!(loop % 10) && loop)
+		{
+			printf("\n");
+		}
+		printf("%d", a[loop]);
+		loop++;
 	}
-
-	loop = n - 1;
-
-	printf("%d\n", a[loop]);
+	printf("\n");
 }
