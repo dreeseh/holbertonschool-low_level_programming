@@ -86,3 +86,6 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 
 /* locates a char in a string  */
 char *_strchr(char *s, char c);
+
+/* returns # of bytes in s  */
+unsigned int _strspn(char *s, char *accept);
