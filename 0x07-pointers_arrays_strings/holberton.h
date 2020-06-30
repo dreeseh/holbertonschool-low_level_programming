@@ -92,3 +92,6 @@ unsigned int _strspn(char *s, char *accept);
 
 /* searches a string for the occorance of str 2  */
 char *_strpbrk(char *s, char *accept);
+
+/* locates a substring */
+char *_strstr(char *haystack, char *needle);
