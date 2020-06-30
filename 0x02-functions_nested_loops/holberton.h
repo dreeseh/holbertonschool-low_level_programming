@@ -26,3 +26,6 @@ int print_sign(int n);
 
 /* prints the absolute value of a number */
 int _abs(int);
+
+/* prints the 9 times table */
+void times_table(void);
