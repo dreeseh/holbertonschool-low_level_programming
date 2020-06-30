@@ -89,3 +89,6 @@ char *_strchr(char *s, char c);
 
 /* returns # of bytes in s  */
 unsigned int _strspn(char *s, char *accept);
+
+/* searches a string for the occorance of str 2  */
+char *_strpbrk(char *s, char *accept);
