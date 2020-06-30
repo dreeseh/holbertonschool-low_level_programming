@@ -95,3 +95,6 @@ char *_strpbrk(char *s, char *accept);
 
 /* locates a substring */
 char *_strstr(char *haystack, char *needle);
+
+/* prints a 2d array */
+void print_chessboard(char (*a)[8]);
