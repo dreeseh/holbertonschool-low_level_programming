@@ -41,3 +41,18 @@ void print_numbers(void);
 
 /* prints 0-9 except for 2 & 4  */
 void print_most_numbers(void);
+
+/* prints the numbers 0 -14 ten times  */
+void more_numbers(void);
+
+/* prints a triangle  */
+void print_triangle(int size);
+
+void print_line(int n);
+
+void print_diagonal(int n);
+
+void print_square(int size);
+
+void print_number(int n);
+
