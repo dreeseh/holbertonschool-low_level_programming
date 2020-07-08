@@ -8,6 +8,7 @@
 int main(void)
 {
 	int i = 1, j = 1, sum = 0;
+
 	while (i < 4000000)
 	{
 		i = i + j;
