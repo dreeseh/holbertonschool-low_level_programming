@@ -23,12 +23,12 @@ int main(void)
 					putchar(32);
 					putchar(b);
 
-					if (i == b)
+if (i == b)
 					{
-						if (c <= a)
-						{
-							c = a + 1;
-						}
+if (c <= a)
+{
+c = a + 1;
+}
 					}
 
 					putchar(c);
