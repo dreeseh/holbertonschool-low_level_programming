@@ -9,13 +9,12 @@ int main(void)
 	unsigned long int w, x = 0, y = 1, z;
 	unsigned long int x1, x2, y1, y2, z1, z2;
 
-	while (w < 92)
+	for (w = 0 ; w < 92 ; w++)
 	{
 		z = x + y;
 		x = y;
 		y = z;
 		printf("%lu, ", z);
-		w++;
 	}
 
 	x1 = x / 10000000000;
