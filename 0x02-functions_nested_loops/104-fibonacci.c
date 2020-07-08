@@ -1,48 +1,37 @@
 #include <stdio.h>
+
 /**
- * main - prints the first 98 Fibonacci numbers
- * Return: is zero
+ * fibo - fibonacci secuence recursion
+ * @n: Integer variable
+ * Return: unsigned long
+ */
+
+unsigned long fibo(int n)
+{
+	if (n <= 2)
+		return (n);
+	return (fibo(n - 1) + fibo(n - 2));
+}
+
+/**
+ * main - prints firts 98 fibonacci secuence
+ *
+ * Return: 0
  */
 
 int main(void)
 {
-	unsigned long int w, x = 0, y = 1, z;
-	unsigned long int x1, x2, y1, y2, z1, z2;
+	unsigned long n, i;
 
-	for (w = 0 ; w < 92 ; w++)
+	n = 98;
+	i = 1;
+	while (i <= n)
 	{
-		z = x + y;
-		x = y;
-		y = z;
-		printf("%lu, ", z);
-	}
-
-	x1 = x / 10000000000;
-	x2 = x % 10000000000;
-	y1 = y / 10000000000;
-	y2 = y % 10000000000;
-
-	for (w = 0 ; w < 98 ; w++)
-	{
-		z1 = x1 + y1;
-		z2 = x2 + y2;
-		if (z2 > 10000000000)
-		{
-			z1 = z1 + 1;
-			z2 = z2 % 10000000000;
-		}
-		if (w < 97)
-		{
-			printf("%lu%lu, ", z1, z2);
-			x1 = y1;
-			x2 = y2;
-			y1 = z1;
-			y2 = z2;
-		}
+		if (i != n)
+			printf("%lu, ", fibo(i));
 		else
-		{
-			printf("%lu%lu\n", z1, z2);
-		}
+			printf("%lu\n", fibo(i));
+		i++;
 	}
 	return (0);
 }
