@@ -32,3 +32,6 @@ void times_table(void);
 
 /* adds 2 ints & returns result */
 int add(int, int);
+
+/* prints all natura numbers from n - 98 */
+void print_to_98(int n);
