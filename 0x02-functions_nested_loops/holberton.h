@@ -29,3 +29,6 @@ int _abs(int);
 
 /* prints the 9 times table */
 void times_table(void);
+
+/* adds 2 ints & returns result */
+int add(int, int);
