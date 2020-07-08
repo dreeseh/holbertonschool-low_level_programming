@@ -7,15 +7,20 @@
 
 void print_number(int n)
 {
+	unsigned int x;
+
 	if (n < 0)
 	{
-		n = -n;
-		_putchar('-');
+		_putchar ('-');
+		x = -n;
 	}
-
-	if (n / 10)
+	else
 	{
-		print_number(n / 10);
-		_putchar(n % 10 + '0');
+		x = n;
 	}
+	if (x / 10 != 0)
+	{
+		print_number(x / 10);
+	}
+	_putchar((x % 10) + '0');
 }
