@@ -128,3 +128,5 @@ int is_prime_number(int n);
 
 /* returns 1 for palindrome 0 for not */
 int is_palindrome(char *s);
+
+int wildcmp(char *s1, char *s2);
