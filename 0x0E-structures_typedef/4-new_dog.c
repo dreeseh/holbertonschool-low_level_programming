@@ -5,7 +5,6 @@
  * @s: pointer to string
  * Return: int i
  */
-
 /* string length */
 int _strlen(char *s)
 {
@@ -26,21 +25,17 @@ int _strlen(char *s)
  * @n: int
  * Return: the 3rd string
  */
-char *_strcpy(char *dest, char *src, int n)
+char *_strcpy(char *dest, char *src)
 {
 	int j;
 
-	for (j = 0 ; j < n && src[j] != '\0' ; j++)
+	for (j = 0 ; src[j] != '\0' ; j++)
 	{
 		dest[j] = src[j];
 	}
-	for (; j < n ; j++)
-	{
-		dest[j] = '\0';
-	}
+		dest[j] = src[j];
 	return (dest);
 }
-
 /* create new struct */
 /**
  * new_dog - making a new dog
@@ -52,37 +47,27 @@ char *_strcpy(char *dest, char *src, int n)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
-	char namelength;
-	char ownerlength;
-
-	if (name == NULL || owner == NULL)
-	{
-		return (NULL);
-	}
+	char *copyname, *copyowner;
 
 	new_dog = malloc(sizeof(dog_t));
-
-	namelength = _strlen(name);
-	ownerlength = _strlen(owner);
-
-	new_dog->name = malloc(sizeof(char) * (namelength + 1));
-
-	if (new_dog->name == NULL)
+	if (new_dog == NULL)
 	{
-		free(new_dog->name);
-		free(new_dog);
 		return (NULL);
 	}
-
-	new_dog->owner = malloc(sizeof(char) * (ownerlength + 1));
-	if (new_dog->owner == NULL)
+	copyname = malloc(sizeof(char) * (_strlen(name) + 1));
+	if (copyname == NULL)
 	{
-		free(new_dog->owner);
-		free(new_dog);
 		return (NULL);
 	}
-	new_dog->name = _strcpy(new_dog->name, name, namelength + 1);
-	new_dog->owner = _strcpy(new_dog->owner, owner, ownerlength + 1);
+	_strcpy(copyname, name);
+	copyowner = malloc(sizeof(char) * (_strlen(owner) + 1));
+	if (copyowner == NULL)
+	{
+		return (NULL);
+	}
+	_strcpy(copyowner, owner);
+	new_dog->name = copyname;
 	new_dog->age = age;
+	new_dog->owner = copyowner;
 	return (new_dog);
 }
