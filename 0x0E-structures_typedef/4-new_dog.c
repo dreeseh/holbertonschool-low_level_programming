@@ -1,76 +1,24 @@
-#include "dog.h"
 #include <stdlib.h>
-/**
- * _strlen - string length
- * @s: pointer to string
- * Return: int i
- */
-/* string length */
-int _strlen(char *s)
-{
-	int i = 0;
+#include <stdio.h>
+#include "dog.h"
 
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
-
-/* concatonate string function */
 /**
- * _strcpy -copies a string
- * @dest: string b
- * @src: string a
- * Return: the 3rd string
+ *new_dog - creates a new dog
+ *@name: name of dog
+ *@age: age of dog
+ *@owner:owner of dog
+ *Return: new dog struct
  */
-char *_strcpy(char *dest, char *src)
-{
-	int j;
 
-	for (j = 0 ; src[j] != '\0' ; j++)
-	{
-		dest[j] = src[j];
-	}
-		dest[j] = src[j];
-	return (dest);
-}
-/* create new struct */
-/**
- * new_dog - making a new dog
- * @name: dogs name
- * @age: gods age
- * @owner: dogs owner
- * Return: nothing
- */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
-	char *copyname, *copyowner;
+	struct dog *new_dog;
 
-	if (name == NULL || owner == NULL)
-	{
-		return (NULL);
-	}
-	new_dog = malloc(sizeof(dog_t));
+	new_dog = malloc(sizeof(struct dog));
 	if (new_dog == NULL)
-	{
 		return (NULL);
-	}
-	copyname = malloc(sizeof(char) * (_strlen(name) + 1));
-	if (copyname == NULL)
-	{
-		return (NULL);
-	}
-	_strcpy(copyname, name);
-	copyowner = malloc(sizeof(char) * (_strlen(owner) + 1));
-	if (copyowner == NULL)
-	{
-		return (NULL);
-	}
-	_strcpy(copyowner, owner);
-	new_dog->name = copyname;
+	new_dog->name = name;
 	new_dog->age = age;
-	new_dog->owner = copyowner;
+	new_dog->owner = owner;
 	return (new_dog);
 }
