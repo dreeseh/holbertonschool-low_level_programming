@@ -1,7 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
 #ifndef REESES_HEADER_H
 #define REESES_HEADER_H
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * struct dog - structure that has 2 chars and one float
  * @name: name of dog
