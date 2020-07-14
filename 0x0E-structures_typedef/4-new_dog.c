@@ -22,7 +22,6 @@ int _strlen(char *s)
  * _strcpy -copies a string
  * @dest: string b
  * @src: string a
- * @n: int
  * Return: the 3rd string
  */
 char *_strcpy(char *dest, char *src)
