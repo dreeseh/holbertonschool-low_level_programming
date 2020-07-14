@@ -1,7 +1,40 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include "dog.h"
-#include <string.h>
+/* string length */
+/**
+ * _strlen - finds length of string
+ * @s: char pointer to string
+ * Return: none
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
+}
+/* concatonate string function */
+/**
+ * _strcpy -copies a string
+ * @dest: string b
+ * @src: string a
+ * Return: the 3rd string
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int j;
+
+	for (j = 0 ; src[j] != '\0' ; j++)
+	{
+		dest[j] = src[j];
+	}
+	dest[j] = src[j];
+	return (dest);
+}
+/* new dog program */
 /**
  *new_dog - creates a new dog
  *@name: name of dog
@@ -9,7 +42,6 @@
  *@owner:owner of dog
  *Return: new dog struct
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
@@ -21,18 +53,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	namelength = malloc(sizeof(char) * strlen(name) + 1);
+	namelength = malloc(sizeof(char) * _strlen(name) + 1);
 	if (namelength == NULL)
 	{
 		return (NULL);
 	}
-	strcat(namelength, name);
-	ownerlength = malloc (sizeof(char) * strlen(owner) + 1);
+	_strcpy(namelength, name);
+	ownerlength = malloc(sizeof(char) * _strlen(owner) + 1);
 	if (ownerlength == NULL)
 	{
 		return (NULL);
 	}
-	strcat(ownerlength, owner);
+	_strcpy(ownerlength, owner);
 	new_dog->name = namelength;
 	new_dog->age = age;
 	new_dog->owner = ownerlength;
