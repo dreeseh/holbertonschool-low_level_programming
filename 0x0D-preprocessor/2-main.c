@@ -1,13 +1,12 @@
 #include <stdio.h>
+
 /**
  * main - prints the name from which the program was comiled
- * @argc: integer type of arguments; contains total number of arguments
- * @argv: array of character pointers; holds all the parameters
+ *
  * Return: is zero
  */
-int main(int argc, char *argv[])
+int main(void)
 {
-	argc++;
-	printf("%s\n", argv[0]);
+	printf("%s\n", __FILE__);
 	return (0);
 }
