@@ -12,21 +12,25 @@ int sum_them_all(const unsigned int n, ...)
 	int sum;
 
 	/* initialize list */
-	va_start (my_list, n);
+	va_start(my_list, n);
 
-	/* step through list */
-	sum = 0;
+	/* edge-case 0 or less */
 	if (n == 0)
 	{
 		return (0);
 	}
-	for (counter = 0 ; counter < n ; counter ++)
+
+	/* step through list */
+	sum = 0;
+	for (counter = 0 ; counter < n ; counter++)
 	{
 		/* get next list item */
-		sum += va_arg (my_list, int);
+		sum += va_arg(my_list, int);
 	}
 
 	/* clean memory */
-	va_end (my_list);
+	va_end(my_list);
+
+	/* returns the sum */
 	return (sum);
 }
