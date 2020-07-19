@@ -3,7 +3,7 @@
 #include <stdarg.h>
 /**
  * print_strings - prints strings
- * @serarator: string to be printed between strings
+ * @separator: string to be printed between strings
  * @n: number of strings to be passed
  * Return: is void
  */
@@ -16,11 +16,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *list_items;
 
 	/* edge-case */
-        if (separator == NULL)
-        {
-                separator = "";
-        }
-        /* initialize list */
+	if (separator == NULL)
+	{
+		separator = "";
+	}
+/* initialize list */
 	va_start(reeses_list, n);
 	/* count */
 	for (counter = 0 ; counter < n ; counter++)
@@ -37,7 +37,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", list_items);
 		}
 		/* print separator */
-		if (counter < n -1 && separator)
+		if (counter < n - 1 && separator)
 		{
 			printf("%s", separator);
 		}
