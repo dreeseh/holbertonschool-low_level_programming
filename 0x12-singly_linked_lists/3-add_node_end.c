@@ -22,10 +22,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	last = *head;
 	new->str = strdup(str);
 	while (str[size])
-        {
-                size++;
-        }
-	new->len = size;;
+	{
+		size++;
+	}
+	new->len = size;
 	new->next = NULL;
 	if (*head == NULL)
 	{
