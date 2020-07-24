@@ -2,22 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/**
- * _strlen - length of string
- * @str: string to find length of
- * Return: length of string
- */
-int _strlen(char *str)
-{
-	unsigned int i;
 
-	i = 0;
-	while (str[i])
-	{
-		i++;
-	}
-	return (i);
-}
 /**
  * add_node_end - adds a node to the end
  * @head: double pointer to linked list
@@ -27,6 +12,7 @@ int _strlen(char *str)
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *last, *new;
+	unsigned int size = 0;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
@@ -35,7 +21,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	last = *head;
 	new->str = strdup(str);
-	new->len = _strlen(new->str);
+	while (str[size])
+        {
+                size++;
+        }
+	new->len = size;;
 	new->next = NULL;
 	if (*head == NULL)
 	{
