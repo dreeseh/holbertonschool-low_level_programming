@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - modify code to print a[2] = 98
- * Return: zero
+ * main - entry point
+ * Return: is zero
  */
 int main(void)
 {
