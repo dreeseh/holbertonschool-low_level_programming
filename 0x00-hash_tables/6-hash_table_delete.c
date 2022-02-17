@@ -1,13 +1,13 @@
 #include "hash_tables.h"
 
-/*
+/**
  * hash_table_delete - a function that deletes a hash table
  * @ht: is the hash table
  * Return: is void
  */
 void hash_table_delete(hash_table_t *ht)
 {
-        unsigned int index = 0;
+	unsigned int index = 0;
 	hash_node_t *new, *tmp;
 
 	if (ht == NULL)
