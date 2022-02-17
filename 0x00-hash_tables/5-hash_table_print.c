@@ -1,14 +1,13 @@
 #include "hash_tables.h"
 
-/*
- *
- *
- *
- *
+/**
+ * hash_table_print - a function that prints a hash table
+ * @ht: the hash table struct
+ * Return: is void
  */
 void hash_table_print(const hash_table_t *ht)
 {
-        unsigned long int index;
+	unsigned long int index;
 	hash_node_t *new;
 	char *comma = "";
 
