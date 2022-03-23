@@ -1,8 +1,11 @@
 #include "search_algos.h"
 
 /**
- * @brief 
- * 
+ * advanced_binary_recursive - recursive adv binary search
+ * @array: the array we are searching
+ * @size: size of the array
+ * @value: value we are searching for
+ * Return: index where value is located or -1
  */
 int advanced_binary_recursive(int *array, size_t size, int value)
 {
@@ -37,8 +40,11 @@ int advanced_binary_recursive(int *array, size_t size, int value)
 }
 
 /**
- * @brief 
- * 
+ * advanced_binary - advanced binary search
+ * @array: array we are searching
+ * @size: size of array we are searching
+ * @value: integer we are searching for
+ * Return: -1 or the index of the value we are searching for
  */
 int advanced_binary(int *array, size_t size, int value)
 {
